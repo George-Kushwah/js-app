@@ -107,11 +107,11 @@ let dc = memoize(squre);
 // console.timeEnd();
 let a21 = ["sun", "mon", "tue"];
 let a22 = Object.assign({}, a21);
-//console.log(a22);
-//console.log(a21.reduce((a, v) => ({ ...a, [v]: v }), {}));
+// console.log(a22);
+// console.log(a21.reduce((a, v) => ({ ...a, [v]: v }), {}));
 let a23 = { name: "Jhon", age: 25 };
 let a24 = Object.entries(a23);
-//console.log(a24.flat());
+// console.log(a24.flat());
 
 function test6() {
   {
@@ -137,8 +137,8 @@ const a26 = {
     long: "86.9023",
   },
 };
-let a27 = Object.entries(a26).map(([item, val]) => ({ item, ...val }));
-// console.log(a27);
+// let a27 = Object.entries(a26).map(([itemq, val]) => ({ itemq, ...val }));
+console.log(a27);
 let a28 = [5, 7, 9, 11, 15, 17];
 function missinodd(a) {
   let a1 = Math.max(...a);

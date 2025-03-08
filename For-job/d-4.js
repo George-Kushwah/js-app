@@ -62,7 +62,7 @@ let dc4 = [1, 2, 3].push(4);
 // console.log(dc4.push(3));
 function foo1() {
   setTimeout(() => {
-    console.log(i);
+    //console.log(i);
   }, 1000);
   let i = 10;
 }
@@ -75,3 +75,53 @@ foo1();
 // } else console.log("hi");
 let fc = [1, 2, 2, 3];
 // console.log(fc.sort(() => Math.random * 0.5));
+let dc5 = "Hello";
+let [a, b, c] = dc5;
+//console.log(a, b, c);
+let dc6 = { fr: "apple", ab: "mango" };
+let { fr: name1, dc = "mango" } = dc6;
+// console.log(dc);
+
+let fg1 = [];
+
+async function statecall() {
+  try {
+    let aa = await fetch(
+      "https://mocki.io/v1/3426f5db-2ad2-43bb-95be-5cdda7e4b826"
+    );
+    let aa1 = await aa.json();
+    if (aa1.length > 0) {
+      let aa2 = document.getElementById("state");
+      aa1.forEach((item) => {
+        var option = document.createElement("option");
+        option.innerHTML = item.name;
+        aa2.appendChild(option);
+      });
+    }
+  } catch (e) {
+    console.log(e);
+  }
+}
+statecall();
+async function getstate() {
+  try {
+    // let fg2 = document.getElementById("state").value;
+    let aa = await fetch(
+      "https://mocki.io/v1/12a582e4-e672-43ab-951b-3396ac8d6b35"
+    );
+    let aa1 = await aa.json();
+    if (aa1.length > 0) {
+      let aa2 = document.getElementById("city");
+      aa1.forEach((item) => {
+        var option = document.createElement("option");
+        option.innerHTML = item.name;
+        aa2.appendChild(option);
+      });
+    }
+  } catch (e) {
+    console.log(e);
+  }
+}
+let fg4 = [1, 2, 3, 4, 5];
+let [a1, , b1, ...fg5] = fg4;
+console.log(a1, b1, fg5);

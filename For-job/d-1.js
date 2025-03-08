@@ -121,11 +121,11 @@ let a16 = (x = { ...a15 }) => {
 // a16(a15); //40
 // a16(); //80
 // a16(); //80
-let df = { hj: "pppp" };
-//let df = [1, 2, 2];
-//let df1 = { ...df };
+// let df = { hj: "pppp" };
+let df = [1, 2, 2];
+// let df1 = { ...df };
 // let df1 = [...df];
-//console.log(df1);
+// console.log(df1);
 // let a17 = {
 //   name: "user",
 //   logmess() {
@@ -444,7 +444,7 @@ function abc2() {
   return 4;
 }
 let s37 = (abc1(), abc2());
-//console.log(s37);
+// console.log(s37);
 let s35 = { aa: "1", 2: "2" };
 let s36 = new Set([1, 2, 3]);
 // console.log(s35.hasOwnProperty("aa"));
@@ -462,25 +462,27 @@ let w2 = { name: "Gunnu" };
 //let w3 = ["name"];
 let w3 = { name: "John" };
 w2[w3] = "George";
-//console.log(w2);
-// let w4 = {
-//   flag: 1,
-//   toString: function () {
-//     return this.flag++;
-//   },
-// };
-// w4.toString();
-// w4.toString();
-// //console.log(w4);
+// console.log(w2[w3]);
+let w4 = {
+  flag: 1,
+  toString: function () {
+    return this.flag++;
+  },
+};
+w4.toString();
+w4.toString();
+//console.log(w4);
 // if (w4 == 1 && w4 == 2 && w3 == 3) {
-//   //console.log("Hello");
+//   console.log("Hello");
 // }
 // let dcf1 = { age: 45 };
 // dcf1.pl = "ppp";
 // console.log(dcf1);
 this.a = 10;
 const dcf2 = () => {
-  console.log(this.a);
+  setTimeout(() => {
+    console.log(this.a);
+  }, 1000);
 };
 // dcf2();
 const user1 = {
@@ -492,12 +494,12 @@ const user1 = {
 // setTimeout(user1.func(), 1000);
 const dcf3 = [1, 2, 3, 4, 5];
 let dcf4 = dcf3.reduce((prev, current, index) => {
-  //   console.log(prev);
-  //   console.log(current);
-  //   console.log("itteration-1");
-  //   return prev + current;
+  console.log(prev, "---prev");
+  console.log(current, "--curr");
+  console.log(`itteration-${index}`);
+  return prev + current;
 });
-//console.log(dcf4);
+// console.log(dcf4);
 const dcf5 = [];
 let dcf6 = dcf5.reduce((prev, current, index) => {
   console.log(prev);
