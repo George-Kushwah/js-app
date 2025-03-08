@@ -182,7 +182,7 @@ s13 = { hj: "dfdfd" }; //change when edit refrence value other wise it stroe dif
 //console.log("9" > "78");
 // console.log(..."Hello");
 let dc1 = ++[[]][+[]] + [+[]];
-//console.log(dc1);
+// console.log(dc1);
 // console.log(5 + +"3");
 // console.log(5 - -"3");
 let dc2 = "8";
@@ -205,9 +205,9 @@ var dc4 = "Rahul";
 //   return df;
 // }, 3);
 //console.log(a20);
-var a39 = "Hello";
+// var a39 = "Hello";
 // console.log(a39);
-var a39;
+// var a39;
 function abc2() {
   console.log(a39);
   var a39 = "Gunnu";
@@ -237,5 +237,6 @@ const { length } = "js"; //Boxing method
 //output a1b2c3def
 //oupt a1b2c3456
 let ss9 = [1, 2, 3, 4];
-delete ss9[0];
-// console.log(ss9);
+// ss9.length = 100;
+//delete ss9[0];
+console.log(ss9);

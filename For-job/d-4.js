@@ -124,4 +124,4 @@ async function getstate() {
 }
 let fg4 = [1, 2, 3, 4, 5];
 let [a1, , b1, ...fg5] = fg4;
-console.log(a1, b1, fg5);
+// console.log(a1, b1, fg5);
