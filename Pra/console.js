@@ -129,13 +129,18 @@ let s43 = 2;
 // console.log(2 + +"2");
 // console.log("2" - 2 + 2);
 // console.log("2" - 5);
-function foop1() {
-  var a = "Hi";
-  let b = "Hello";
-  if (true) {
-    var a = "Hi-1";
-    var b = "Hello-1"; //illegal shadow
-    console.log(a, b);
-  }
-}
-foop1();
+// function foop1() {
+//   var a = "Hi";
+//   let b = "Hello";
+//   if (true) {
+//     var a = "Hi-1";
+//     var b = "Hello-1"; //illegal shadow
+//     console.log(a, b);
+//   }
+// }
+// foop1();
+// console.log(false == "0");
+// console.log("a" - "b" + 2);
+//console.log(NaN + 555);
+//console.log(1 + -"1" + "2");
+//console.log(2 - -"6");
