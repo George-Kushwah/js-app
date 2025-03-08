@@ -164,7 +164,7 @@ let s5 = new Function("a", "b", "console.log(a+b)");
 let s6 = [1, 2];
 let s7 = s6.slice(); //slie method create a sholow copy of the array
 s7[0] = 42;
-//console.log(s7, s6);
+// console.log(s7, s6);
 let s8 = { y: 10 }; //JSON NOT ACCEPT CIRCULLER OBJECT
 s8.x = s8;
 //console.log(JSON.stringify(s8));
@@ -180,7 +180,7 @@ let s13 = s12;
 s13 = { hj: "dfdfd" }; //change when edit refrence value other wise it stroe diff location
 // console.log(s12);
 //console.log("9" > "78");
-//onsole.log(..."Hello");
+// console.log(..."Hello");
 let dc1 = ++[[]][+[]] + [+[]];
 //console.log(dc1);
 // console.log(5 + +"3");
