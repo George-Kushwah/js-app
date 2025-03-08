@@ -36,7 +36,7 @@ var a11 = 15;
 function a11() {
   console.log("Hello");
 }
-//console.log(a11);
+// console.log(a11);
 //console.log([1, 2, 3] == "1,2,3");
 var a12 = "employee";
 function test3() {
@@ -49,8 +49,8 @@ function test3() {
 let a13 = [1, 5, 5].push(5); //it will return a length of array
 //a13.push(3);
 // console.log(a13);
-a14 = 6;
-//console.log(a14);
+// a14 = 6;
+// console.log(a14);
 // let a14;
 let a16 = [1, 2, 3, 6];
 let [a17] = a16; // becaue of destrincing

@@ -138,7 +138,7 @@ const a26 = {
   },
 };
 // let a27 = Object.entries(a26).map(([itemq, val]) => ({ itemq, ...val }));
-console.log(a27);
+// console.log(a27);
 let a28 = [5, 7, 9, 11, 15, 17];
 function missinodd(a) {
   let a1 = Math.max(...a);
@@ -236,7 +236,7 @@ function cd3() {
   //process.nextTick(() => console.log("Tick")); // ye sabse pahale chalta hai setTimeout se bhi pahale
   console.trace();
 }
-//cd1();
+// cd1();
 let rf = "dfsfsdfs";
 let dc1 = Array.from(rf);
 // console.log(dc1);
