@@ -83,6 +83,7 @@ let a29 = 100;
 // console.log(30 + null); //
 // console.log("ancd" + undefined); //abcdunde
 // console.log("ancd" + null); //abdnull
+//console.log(isNaN({}));
 // console.log(isNaN(new Date()));
 // console.log(isNaN(Date()));
 // console.log("good" > "zzzz");
@@ -118,13 +119,23 @@ let s39 = "hello";
 // console.log(s39.includes("ll"));
 let s42 = 1;
 let s43 = 2;
-//console.log(s42++ + ++s43);
+// console.log(s42++ + ++s43);
 // console.log("A" - 1);
 // console.log("sd" + +"fv");
 // console.log(!!"false" == !!"true");
 // console.log(false || null || "hello");
 // console.log(false && null && "hello");
 // console.log(..."Hello");
-//console.log(2 + +"2");
-//console.log("2" - 2 + 2);
-//console.log("2" - 5);
+// console.log(2 + +"2");
+// console.log("2" - 2 + 2);
+// console.log("2" - 5);
+function foop1() {
+  var a = "Hi";
+  let b = "Hello";
+  if (true) {
+    var a = "Hi-1";
+    var b = "Hello-1"; //illegal shadow
+    console.log(a, b);
+  }
+}
+foop1();
