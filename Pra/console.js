@@ -139,8 +139,40 @@ let s43 = 2;
 //   }
 // }
 // foop1();
+// console.log(2 + "a" - 2);
+// console.log(NaN + "n" - 2);
 // console.log(false == "0");
 // console.log("a" - "b" + 2);
 //console.log(NaN + 555);
-//console.log(1 + -"1" + "2");
-//console.log(2 - -"6");
+// console.log(1 + -"1" + "2");
+// console.log(2 - -"6");
+// let za1 = "abcabac".split("");
+// let za2 = {};
+// za1.forEach((i) => {
+//   za2[i] = (za2[i] || 0) + 1;
+// });
+// console.log(za2);
+// console.log(2 - -6);
+// let za3 = { valueOf: () => 2 };
+// console.log(za3);
+// console.log(za3 == 2);
+// console.log(za3 + 2);
+// console.log(za3 > 1);
+//console.log([1, 2][2]);
+//console.log([2, 3, 4, 5][0]);
+let za4 = [10, 20, 30];
+// console.log(za4[1]);
+// console.log(za4["1"]);
+// console.log(za4["01"]);
+var za5 = 2,
+  y = (z = typeof y);
+// console.log(y);
+var za6 = 10;
+function foo23() {
+  if (za6 > 5) {
+    var za6 = 2;
+    console.log(za6);
+  }
+  console.log(za6);
+}
+//foo23();
