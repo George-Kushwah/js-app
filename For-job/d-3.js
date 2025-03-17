@@ -49,7 +49,7 @@ function test3() {
 let a13 = [1, 5, 5].push(5); //it will return a length of array
 //a13.push(3);
 // console.log(a13);
-// a14 = 6;
+a14 = 6;
 // console.log(a14);
 // let a14;
 let a16 = [1, 2, 3, 6];
@@ -237,6 +237,6 @@ const { length } = "js"; //Boxing method
 //output a1b2c3def
 //oupt a1b2c3456
 let ss9 = [1, 2, 3, 4];
-// ss9.length = 100;
-//delete ss9[0];
-console.log(ss9);
+ss9.length = 100;
+delete ss9[0];
+// console.log(ss9);

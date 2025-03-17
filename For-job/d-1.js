@@ -8,7 +8,7 @@ let a1 = {
     });
   },
 };
-//a1.func();
+// a1.func();
 let a2 = "Rajesh";
 function test11() {
   let a2 = "Minal";
@@ -16,7 +16,7 @@ function test11() {
 }
 if (a2.length > 0) {
   a2 = "Rohan";
-  //console.log(a2);
+  // console.log(a2);
 }
 // test11();
 // console.log(a2);
@@ -75,8 +75,8 @@ function test1(a) {
     }
   }
 }
-test1(a9);
-//console.log(a9);
+// test1(a9);
+// console.log(a9);
 let a = {};
 let b = { key: "a" };
 let c = { key: "c" };
@@ -121,9 +121,9 @@ let a16 = (x = { ...a15 }) => {
 // a16(a15); //40
 // a16(); //80
 // a16(); //80
-// let df = { hj: "pppp" };
-let df = [1, 2, 2];
-// let df1 = { ...df };
+let df = { hj: "pppp" };
+//let df = [1, 2, 2];
+//let df1 = { ...df };
 // let df1 = [...df];
 // console.log(df1);
 // let a17 = {
@@ -241,9 +241,9 @@ let aa = new hello("Gunnu");
 //     }, i);
 //   })(i);
 // }
-// let b1 = [1, 2, 3];
-// b1[10] = 11;
-// //console.log(b1);
+let b1 = [1, 2, 3];
+b1[10] = 11;
+// console.log(b1);
 function test22(name) {
   let mark = name ?? "absent";
   console.log(`mark is ${mark}`);
@@ -297,7 +297,7 @@ function getsumm(a, b, c) {
 let a32 = "Gunnu";
 let a33 = "George";
 // getsumm`${a32} hello ${a33}`; // Tagged template
-//console.log(["toSdfdfdtring", "ppp"].length);
+// console.log(["toSdfdfdtring", "ppp"].length);
 function test() {
   console.log(test.xz);
 }
@@ -408,7 +408,7 @@ function test45() {
   s30 = "hi";
   return;
   function s30() {
-    return;
+    return "fdfdf";
   }
 }
 // console.log(test45());
@@ -417,7 +417,7 @@ show1 = "love js";
 function show1() {
   console.log("hello");
 }
-//console.log(show1);
+// console.log(show1);
 var foo = "hi";
 function test4() {
   function foo() {}
@@ -499,13 +499,13 @@ let dcf4 = dcf3.reduce((prev, current, index) => {
   console.log(`itteration-${index}`);
   return prev + current;
 });
-// console.log(dcf4);
+console.log(dcf4);
 const dcf5 = [];
 let dcf6 = dcf5.reduce((prev, current, index) => {
-  console.log(prev);
-  console.log(current);
-  console.log("itteration-1");
-  return prev + current;
+  // console.log(prev);
+  // console.log(current);
+  // console.log("itteration-1");
+  // return prev + current;
 }, 0);
 // console.log(dcf6);
 const sw1 = [1, 2, 3, 4];

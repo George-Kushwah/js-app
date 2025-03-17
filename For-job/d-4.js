@@ -77,7 +77,7 @@ let fc = [1, 2, 2, 3];
 // console.log(fc.sort(() => Math.random * 0.5));
 let dc5 = "Hello";
 let [a, b, c] = dc5;
-//console.log(a, b, c);
+// console.log(a, b, c);
 let dc6 = { fr: "apple", ab: "mango" };
 let { fr: name1, dc = "mango" } = dc6;
 // console.log(dc);

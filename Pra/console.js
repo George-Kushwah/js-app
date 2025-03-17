@@ -33,7 +33,7 @@ let a29 = 100;
 // console.log(NaN === NaN);
 // console.log({} + []);
 // console.log(true + 1);
-// console.log(true + "");
+// console.log(true > "");
 // console.log(1 < 1);
 // console.log(undefined++);
 // console.log([1, 5, 5] + [2, 3]); // convert array in string
@@ -121,9 +121,9 @@ let s42 = 1;
 let s43 = 2;
 // console.log(s42++ + ++s43);
 // console.log("A" - 1);
-// console.log("sd" + +"fv");
+// console.log("sd" + +"fv" - 2);
 // console.log(!!"false" == !!"true");
-// console.log(false || null || "hello");
+// console.log(false || null || "helslo");
 // console.log(false && null && "hello");
 // console.log(..."Hello");
 // console.log(2 + +"2");
@@ -143,7 +143,7 @@ let s43 = 2;
 // console.log(NaN + "n" - 2);
 // console.log(false == "0");
 // console.log("a" - "b" + 2);
-//console.log(NaN + 555);
+// console.log(NaN + 555);
 // console.log(1 + -"1" + "2");
 // console.log(2 - -"6");
 // let za1 = "abcabac".split("");
@@ -176,3 +176,19 @@ function foo23() {
   console.log(za6);
 }
 //foo23();
+let za7 = 5;
+let za8 = 10;
+[a1, b1] = [za7, za8];
+let cd1 = document.getElementById("getId");
+cd1.addEventListener("click", (e) => {
+  //let ac = e.target.innerHTML;
+  let ac = e.target.className;
+  let ac1 = ac.split(" ");
+  if (ac1.length === 1) {
+    e.target.classList.add("cl");
+    console.log("single click");
+  } else {
+    console.log("Double click");
+    e.target.classList.remove("cl");
+  }
+});
