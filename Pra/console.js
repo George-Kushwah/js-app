@@ -83,7 +83,7 @@ let a29 = 100;
 // console.log(30 + null); //
 // console.log("ancd" + undefined); //abcdunde
 // console.log("ancd" + null); //abdnull
-//console.log(isNaN({}));
+// console.log(isNaN({}));
 // console.log(isNaN(new Date()));
 // console.log(isNaN(Date()));
 // console.log("good" > "zzzz");
@@ -192,3 +192,4 @@ cd1.addEventListener("click", (e) => {
     e.target.classList.remove("cl");
   }
 });
+console.log(null || "hello");
