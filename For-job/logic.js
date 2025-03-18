@@ -402,14 +402,14 @@ Object.freeze(c12);
 // c12["age"] = 4.5;
 // c12["city"] = "Agra";
 // console.log(c12);
-let c13 = "Hi javascript is best language".split("");
+let c13 = "Hi javascript is best language".split(" ");
 let c15 = "";
-// for (i of c13) {
-//   //let c = i.slice(0, 1).toUpperCase() + i.slice(1);
-//   let d = i.split("").reverse().join("");
-//   c15 += d + " ";
-// }
-//console.log(c15);
+for (i of c13) {
+  //let c = i.slice(0, 1).toUpperCase() + i.slice(1);
+  let d = i.split("").reverse().join("");
+  c15 += d + " ";
+}
+// console.log(c15);
 let c14 = c13;
 let c16 = {};
 c14.forEach((i) => {

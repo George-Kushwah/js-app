@@ -192,4 +192,6 @@ cd1.addEventListener("click", (e) => {
     e.target.classList.remove("cl");
   }
 });
-console.log(null || "hello");
+// console.log(false || true || "hello");
+// console.log(false && "hello");
+console.log([...Array(10)].map((item) => item));
