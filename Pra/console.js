@@ -194,4 +194,17 @@ cd1.addEventListener("click", (e) => {
 });
 // console.log(false || true || "hello");
 // console.log(false && "hello");
-console.log([...Array(10)].map((item) => item));
+//console.log([...Array(10)].map((item) => item));
+// console.log(true && "Hello");
+// console.log(undefined && null);
+let as1 = { a: { b: { c: { name: "Gunnu" } } } };
+function abac(obj) {
+  for (i in obj) {
+    if (typeof obj[i] === "object") {
+      abac(obj[i]);
+    } else {
+      console.log(i, obj[i]);
+    }
+  }
+}
+// abac(as1);
