@@ -69,4 +69,48 @@ let aq8 = aq7.reduce((a, b) => (a.length > b.length ? a : b));
 let aq9 = "abcdefa".split("");
 //console.log(new Set(aq9).size === aq9.length);
 //console.log(aq9.filter((a, b) => aq9.indexOf(a) != b));
-console.log(Math.floor(Math.random() * 5000));
+//console.log(Math.floor(Math.random() * 5000));
+let aq10 = [1, 2, 3, 6, 5, 4];
+// console.log(aq10["2"]);
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+const fruits2 = fruits.toSpliced(2, 0, "Lemon", "Kiwi"); // retrun a new array
+//console.log(fruits, fruits2);
+let aq11 = 0;
+let aq12 = [1, 2, 3];
+delete aq12[1];
+aq12.forEach(() => aq11++);
+//console.log(aq12);
+// console.log(aq12.length);
+// console.log(aq11);
+let aq13 = [undefined, null, undefined, null];
+// aq13.map((i) => {
+//   console.log(i);
+// });
+let aq14 = (len) => {
+  let otp = "";
+  for (let i = 0; i < len; i++) {
+    let rand = Math.random() * 10;
+    otp += Math.floor(rand);
+  }
+  return otp;
+};
+//console.log(aq14(7));
+function evaluate(opr) {
+  return function (a) {
+    return function (b) {
+      if (opr === "sum") return a + b;
+      else if (opr === "multi") return a * b;
+      else return "invalid";
+    };
+  };
+}
+//console.log(evaluate("sum")(8)(2));
+function createBase(base) {
+  return function (a) {
+    return base + a;
+  };
+}
+let adds = createBase(10);
+// console.log(adds(5));
+let aq15 = [1, 2, 3, 1, 2, 5, 3];
+console.log(aq15.indexOf(3, 3));
