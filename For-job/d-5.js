@@ -113,4 +113,71 @@ function createBase(base) {
 let adds = createBase(10);
 // console.log(adds(5));
 let aq15 = [1, 2, 3, 1, 2, 5, 3];
-console.log(aq15.indexOf(3, 3));
+//console.log(aq15.indexOf(3, 3));
+let aq16 = [1, 2, 3, 4, 5];
+let aq16sum = 0;
+let aq16sq = aq16.map((num) => ((aq16sum += num), num * num));
+//console.log(aq16sum, aq16sq);
+// (function () {
+//   try {
+//     throw new Error();
+//   } catch (x) {
+//     var x = 1,
+//       y = 2;
+//     console.log(x);
+//   }
+//   console.log(x);
+//   console.log(y);
+// })();
+let aq17 = [2, 5, 6, 9, 6];
+function foo5(arr, tar) {
+  let a = [];
+  for (i = 0; i < arr.length; i++) {
+    let z = arr[i];
+    for (j = i; j < arr.length; j++) {
+      if (z !== arr[j] && z + arr[j] == tar) {
+        a.push(arr[i], arr[j]);
+      }
+    }
+  }
+  return a;
+}
+//console.log(foo5(aq17, 7));
+let aq18 = ["Radar", "Level", "Nitin", "Hello", "Minal"];
+let aq19 = [];
+function foo6(arr) {
+  for (i of arr) {
+    let a = i;
+    let res = i.split("").reverse().join("");
+    if (a.toUpperCase() === res.toUpperCase()) {
+      aq19.push(a);
+    }
+  }
+}
+foo6(aq18);
+// console.log(aq19);
+let aq20 = [1, 2, null, undefined, "", true, false, NaN, {}, []];
+function foo7(arr) {
+  let a = [];
+  for (i of arr) {
+    if (i) {
+      a.push(i);
+    }
+  }
+  return a;
+}
+//console.log(foo7(aq20));
+function foo8(num) {
+  if (num === 1) return num;
+  else return num * foo8(num - 1);
+}
+//console.log(foo8(4));
+let aq21 = {
+  lib: "JavaScript",
+  fun: function () {
+    console.log(this.lib);
+  },
+};
+aq21.fun();
+//setTimeout(aq21.fun, 100);
+//setTimeout(() => aq21.fun());
