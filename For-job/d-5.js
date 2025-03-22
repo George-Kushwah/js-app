@@ -178,6 +178,10 @@ let aq21 = {
     console.log(this.lib);
   },
 };
-aq21.fun();
+//aq21.fun();
 //setTimeout(aq21.fun, 100);
 //setTimeout(() => aq21.fun());
+//console.log((() => {})());
+// console.log(Array.from({ length: 10 }).map((_, item) => item));
+//console.log(1 - false - 1);
+//console.log(false - 1);
