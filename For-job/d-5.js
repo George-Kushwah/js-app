@@ -185,3 +185,6 @@ let aq21 = {
 // console.log(Array.from({ length: 10 }).map((_, item) => item));
 //console.log(1 - false - 1);
 //console.log(false - 1);
+let aq22 = [2, 3, 6, 5, 4];
+aq22.splice(aq22.length, 0, "ddd");
+// console.log(aq22);
