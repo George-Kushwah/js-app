@@ -178,7 +178,7 @@ s10 = 25;
 let s12 = { prop: 12 };
 let s13 = s12;
 s13 = { hj: "dfdfd" }; //change when edit refrence value other wise it stroe diff location
-// console.log(s12);
+// console.log(s12, s13);
 //console.log("9" > "78");
 // console.log(..."Hello");
 let dc1 = ++[[]][+[]] + [+[]];

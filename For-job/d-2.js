@@ -1,7 +1,7 @@
 let a1 = [1, 2, [1, 5, 6, [9, 5, 7, [8, 9]]]];
 //let a2 = Array.prototype.concat.apply([], a1);
 //let a2 = a1.reduce((a, b) => a.concat(b), []);
-//console.log(a2);
+// console.log(a2);
 let a3 = 0;
 function denn() {
   console.log("Fracth Data" + a3++);

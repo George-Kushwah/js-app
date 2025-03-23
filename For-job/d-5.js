@@ -54,7 +54,7 @@ for (i of aq5) {
 function foo2(arr) {
   return [...Array(arr)].map((item, ind) => arr - ind);
 }
-//console.log(foo2(14));
+// console.log(foo2(14));
 function foo3(str) {
   return Number(str);
 }
@@ -79,7 +79,7 @@ let aq11 = 0;
 let aq12 = [1, 2, 3];
 delete aq12[1];
 aq12.forEach(() => aq11++);
-//console.log(aq12);
+// console.log(aq12);
 // console.log(aq12.length);
 // console.log(aq11);
 let aq13 = [undefined, null, undefined, null];
@@ -183,8 +183,8 @@ let aq21 = {
 //setTimeout(() => aq21.fun());
 //console.log((() => {})());
 // console.log(Array.from({ length: 10 }).map((_, item) => item));
-//console.log(1 - false - 1);
-//console.log(false - 1);
+// console.log(1 - false - 1);
+// console.log(false - 1);
 let aq22 = [2, 3, 6, 5, 4];
 aq22.splice(aq22.length, 0, "ddd");
 // console.log(aq22);

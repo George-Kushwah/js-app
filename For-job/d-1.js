@@ -485,7 +485,7 @@ const dcf2 = () => {
     console.log(this.a);
   }, 1000);
 };
-dcf2();
+// dcf2();
 const user1 = {
   name: "Rahul",
   func() {
@@ -501,13 +501,13 @@ let dcf4 = dcf3.reduce((prev, current, index) => {
   return prev + current;
 });
 // console.log(dcf4);
-const dcf5 = [];
+const dcf5 = [1, 2, 3, 4, 5, 6];
 let dcf6 = dcf5.reduce((prev, current, index) => {
-  // console.log(prev);
-  // console.log(current);
-  // console.log("itteration-1");
-  // return prev + current;
-}, 0);
+  console.log(prev);
+  console.log(current);
+  console.log("itteration-1");
+  return prev + current;
+});
 // console.log(dcf6);
 const sw1 = [1, 2, 3, 4];
 sw1.splice(0, sw1.length);

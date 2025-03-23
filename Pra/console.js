@@ -208,3 +208,5 @@ function abac(obj) {
   }
 }
 // abac(as1);
+// console.log(1 - false - 1);
+// console.log(false - 1);
