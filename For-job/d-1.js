@@ -121,9 +121,9 @@ let a16 = (x = { ...a15 }) => {
 // a16(a15); //40
 // a16(); //80
 // a16(); //80
-let df = { hj: "pppp" };
-//let df = [1, 2, 2];
-//let df1 = { ...df };
+//let df = { hj: "pppp" };
+let df = [1, 2, 2];
+// let df1 = { ...df };
 // let df1 = [...df];
 // console.log(df1);
 // let a17 = {
@@ -176,7 +176,7 @@ let a22 = a21.sum(15).multi(5);
 // console.log(a22.total);
 let a23 = ["a", "b", "c"];
 let a24 = [1, 2, 3];
-//a23.push.apply(a23, a24);
+a23.push.apply(a23, a24);
 // console.log(a23);
 function f() {
   console.log(`${this.name}`);
@@ -308,6 +308,7 @@ let s1 = 10;
 let s2 = new Number(10); // its create a object
 let s3 = 10;
 //console.log(b === c);
+//console.log(s1 === s2);
 function setage(ed) {
   if (ed == { age: 18 }) {
     console.log("hello age");
@@ -484,7 +485,7 @@ const dcf2 = () => {
     console.log(this.a);
   }, 1000);
 };
-// dcf2();
+dcf2();
 const user1 = {
   name: "Rahul",
   func() {
@@ -494,12 +495,12 @@ const user1 = {
 // setTimeout(user1.func(), 1000);
 const dcf3 = [1, 2, 3, 4, 5];
 let dcf4 = dcf3.reduce((prev, current, index) => {
-  console.log(prev, "---prev");
-  console.log(current, "--curr");
-  console.log(`itteration-${index}`);
+  // console.log(prev, "---prev");
+  // console.log(current, "--curr");
+  // console.log(`itteration-${index}`);
   return prev + current;
 });
-console.log(dcf4);
+// console.log(dcf4);
 const dcf5 = [];
 let dcf6 = dcf5.reduce((prev, current, index) => {
   // console.log(prev);
