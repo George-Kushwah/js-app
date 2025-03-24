@@ -195,4 +195,4 @@ var daysOfYear = [];
 for (var d = new Date(2025, 2, 20); d <= now; d.setDate(d.getDate() + 1)) {
   daysOfYear.push(new Date(d).getDay());
 }
-console.log(daysOfYear);
+// console.log(daysOfYear);
