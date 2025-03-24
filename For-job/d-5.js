@@ -188,3 +188,11 @@ let aq21 = {
 let aq22 = [2, 3, 6, 5, 4];
 aq22.splice(aq22.length, 0, "ddd");
 // console.log(aq22);
+let aq23 = [1, 2, 3, [1, 2, 1, [, 1, 2, 5, 5, 2, [(2, 2, 2)]]]];
+// console.log(aq23.flat(Infinity));
+var now = new Date();
+var daysOfYear = [];
+for (var d = new Date(2025, 2, 20); d <= now; d.setDate(d.getDate() + 1)) {
+  daysOfYear.push(new Date(d).getDay());
+}
+console.log(daysOfYear);
