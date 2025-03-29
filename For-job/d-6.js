@@ -73,4 +73,31 @@ function foo5(arr, tar) {
 //console.log(dc.sort((a, b) => a - b));
 let a8 = [2, 5, 6, 8, [2, 3, 9, [6, 3, 8]]];
 a8.push(95, [85, a8], 6);
-console.log(a8.toString());
+// console.log(a8.toString());
+let a9 = "Hello Rahul how u r lelOh".split(" ");
+let a10 = a9.map((item, ind, arr) => {
+  let a = item
+    .split("")
+    .sort((a, b) => a.localeCompare(b))
+    .join("")
+    .toUpperCase();
+  //console.log(a);
+});
+let a11 = a9.map((item, ind, arr) => {
+  let a = item
+    .split("")
+    .sort((a, b) => a.localeCompare(b))
+    .join("")
+    .toUpperCase();
+  if (ind == 0) {
+    let a1 = arr.filter(
+      (item) =>
+        item
+          .split("")
+          .sort((a, b) => a.localeCompare(b))
+          .join("")
+          .toUpperCase() == a
+    );
+    console.log(a1);
+  }
+});
