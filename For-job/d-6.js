@@ -159,4 +159,28 @@ function foo3(s) {
 function foo4(sd) {
   return sd.toString(2);
 }
-console.log(foo4(12525));
+//console.log(foo4(12525));
+let inp1 = document.getElementById("fg1");
+let inp2 = document.getElementById("fg2");
+let typetime;
+inp1.addEventListener("input", () => {
+  inp2.innerText = "Typeing";
+  clearInterval(typetime);
+  typetime = setInterval(() => {
+    inp2.innerText = "";
+  }, 500);
+});
+let a17 = [1, 2, 3, 4, 5];
+let dc = 2;
+function foo5(arr, ...val) {
+  for (i = 0; i < val.length; i++) {
+    let a = arr.indexOf(val[i]);
+    arr.splice(a, 1);
+    arr.splice(val.length + 1, 0, val[i]);
+  }
+}
+foo5(a17, 2, 3);
+console.log(a17);
+//let a18 = [...a17.splice(a17.length - dc)];
+//console.log(a18);
+//console.log(a17.splice(4));
