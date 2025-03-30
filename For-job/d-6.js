@@ -128,4 +128,23 @@ function foo2(arr, ...val) {
   }
 }
 foo2(a13, 2, 3);
-console.log(a13);
+//console.log(a13);
+let a14 = "Hello nitin Rahul tIInN how u r lelOh".split(" ");
+let a15 = a14.map((item, ind, arr) => {
+  let a = item
+    .split("")
+    .sort((a, b) => a.localeCompare(b))
+    .join("")
+    .toLowerCase();
+  let a1 = arr.filter(
+    (item) =>
+      item
+        .split("")
+        .sort((a, b) => a.localeCompare(b))
+        .join("")
+        .toLowerCase() === a
+  );
+  if (a1.length > 1) {
+    console.log(item);
+  }
+});
