@@ -156,3 +156,7 @@ function foo3(s) {
   console.log(a1);
 }
 //foo3(a16);
+function foo4(sd) {
+  return sd.toString(2);
+}
+console.log(foo4(12525));
