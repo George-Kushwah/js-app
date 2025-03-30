@@ -98,6 +98,34 @@ let a11 = a9.map((item, ind, arr) => {
           .join("")
           .toUpperCase() == a
     );
-    console.log(a1);
+    // console.log(a1);
   }
 });
+let a12 = [1, 2, 0, 3, 6, 0, 5, 8];
+let a13 = [1, 2, 3, 4, 5, 6, 7, 8];
+//[1,4,2,3,5,6,7,8]
+//[1,4,5,6,7,8,2,3]
+for (i = 0; i < a12.length; i++) {
+  if (a12[i] === 0) {
+    a12.splice(i, 1);
+    a12.push(0);
+  }
+}
+//console.log(a12);
+function foo1(a, b) {
+  let a1 = a.slice(0, b);
+  let a2 = a.slice(b, a.length);
+  console.log(...a2, ...a1);
+}
+//foo1(a13, 4);
+function foo2(arr, ...val) {
+  for (i = 0; i < val.length; i++) {
+    let a = arr.indexOf(val[i]);
+    let a1 = arr[a];
+    arr.splice(a, 1);
+    //arr.push(a1);
+    arr.splice(val.length + 1, 0, a1);
+  }
+}
+foo2(a13, 2, 3);
+console.log(a13);
