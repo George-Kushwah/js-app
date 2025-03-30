@@ -145,6 +145,14 @@ let a15 = a14.map((item, ind, arr) => {
         .toLowerCase() === a
   );
   if (a1.length > 1) {
-    console.log(item);
+    //console.log(item);
   }
 });
+
+let a16 = "Hello hi Guunua";
+function foo3(s) {
+  let a = s.split(" ");
+  let a1 = a[a.length - 1].length;
+  console.log(a1);
+}
+//foo3(a16);
