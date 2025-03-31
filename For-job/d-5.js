@@ -11,6 +11,7 @@ function foo1(obj) {
   }
 }
 //foo1(aq3);
+
 let aq4 = {
   age: {
     city: "agra",
@@ -178,7 +179,7 @@ let aq21 = {
     console.log(this.lib);
   },
 };
-//aq21.fun();
+// aq21.fun();
 //setTimeout(aq21.fun, 100);
 //setTimeout(() => aq21.fun());
 //console.log((() => {})());
@@ -187,14 +188,14 @@ let aq21 = {
 // console.log(false - 1);
 let aq22 = [2, 3, 6, 5, 4];
 aq22.splice(2, 0, "ddd");
-console.log(aq22);
+// console.log(aq22);
 let aq23 = [1, 2, 3, [1, 2, 1, [, 1, 2, 5, 5, 2, [(2, 2, 2)]]]];
 // console.log(aq23.flat(Infinity));
 var now = new Date();
 var daysOfYear = [];
-for (var d = new Date(2025, 2, 20); d <= now; d.setDate(d.getDate() + 1)) {
+for (var d = new Date(2025, 2, 25); d <= now; d.setDate(d.getDate() + 1)) {
   daysOfYear.push(new Date(d).getDay());
 }
 // console.log(daysOfYear);
 let aq24 = new Array(6, 5);
-// console.log(aq24);
+console.log(aq24);

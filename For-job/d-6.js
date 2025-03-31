@@ -41,9 +41,9 @@ let a7 = [];
 a6.forEach((item, ind, arr) => {
   let a = item.split("").reverse().join("").toUpperCase();
   let a1 = arr.filter((item) => item.toUpperCase() === a);
-  if (item.length > 0 && a1.length > 0) {
+  if (item.length > 1 && a1.length > 0) {
     //console.log(item);
-    a7.push(item);
+    // a7.push(item);
   }
 });
 //console.log(a7);
@@ -68,9 +68,9 @@ function foo5(arr, tar) {
   return a;
 }
 // console.log(foo5(aq17, 9));
-//let dc = ["aa", "AA", "bc", "BB"];
+let dc1 = ["aa", "AA", "bc", "BB"];
 //console.log(dc.sort());
-//console.log(dc.sort((a, b) => a - b));
+// console.log(dc1.sort((a, b) => a.localeCompare(b)));
 let a8 = [2, 5, 6, 8, [2, 3, 9, [6, 3, 8]]];
 a8.push(95, [85, a8], 6);
 // console.log(a8.toString());
@@ -98,7 +98,7 @@ let a11 = a9.map((item, ind, arr) => {
           .join("")
           .toUpperCase() == a
     );
-    // console.log(a1);
+    //console.log(item);
   }
 });
 let a12 = [1, 2, 0, 3, 6, 0, 5, 8];
@@ -111,7 +111,7 @@ for (i = 0; i < a12.length; i++) {
     a12.push(0);
   }
 }
-//console.log(a12);
+// console.log(a12);
 function foo1(a, b) {
   let a1 = a.slice(0, b);
   let a2 = a.slice(b, a.length);
@@ -172,15 +172,15 @@ inp1.addEventListener("input", () => {
 });
 let a17 = [1, 2, 3, 4, 5];
 let dc = 2;
-function foo5(arr, ...val) {
+function foo56(arr, ...val) {
   for (i = 0; i < val.length; i++) {
     let a = arr.indexOf(val[i]);
     arr.splice(a, 1);
     arr.splice(val.length + 1, 0, val[i]);
   }
 }
-foo5(a17, 2, 3);
-console.log(a17);
-//let a18 = [...a17.splice(a17.length - dc)];
-//console.log(a18);
+//foo56(a17, 2, 3);
+// console.log(a17);
+let a18 = [...a17.splice(a17.length - dc), ...a17];
+console.log(a18);
 //console.log(a17.splice(4));
