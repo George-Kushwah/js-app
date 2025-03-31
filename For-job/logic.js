@@ -366,7 +366,7 @@ let c2 = c1.reduce((a, b, c, d) => {
   if (d.indexOf(b) != c && a.indexOf(b) < 0) a.push(b);
   return a;
 }, []);
-//console.log(c2);
+// console.log(c2);
 let c3 = {};
 let c4 = [];
 c1.forEach((i) => {

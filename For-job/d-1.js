@@ -503,9 +503,9 @@ let dcf4 = dcf3.reduce((prev, current, index) => {
 // console.log(dcf4);
 const dcf5 = [1, 2, 3, 4, 5, 6];
 let dcf6 = dcf5.reduce((prev, current, index) => {
-  console.log(prev);
-  console.log(current);
-  console.log("itteration-1");
+  // console.log(prev);
+  // console.log(current);
+  // console.log("itteration-1");
   return prev + current;
 });
 // console.log(dcf6);
