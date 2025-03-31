@@ -228,12 +228,12 @@ function abcd() {
 }
 //-----------------------------
 let b1 = "Rahul";
-let b2 = "Hello my name is Harshit";
+let b2 = "Hello my name is Harshit is";
 // console.log(b2.includes("my"));
 // console.log(b2.startsWith("He"));
 // console.log(b2.endsWith("it"));
 // console.log(b2.search("my"));
-//console.log(b2.match(/is/g));
+// console.log(b2.match(/is/g));
 // console.log(b2.search("my"));
 //console.log(b2.replace(/is/g, "on"));
 //console.log(b1.slice(-3, -1));
