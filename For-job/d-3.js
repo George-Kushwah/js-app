@@ -223,7 +223,7 @@ function closer1() {
   clo1();
   // console.log(b);
 }
-// closer1();
+closer1();
 localStorage.setItem("dn", "11-25-2018");
 //console.log(localStorage.getItem("dn"));
 document.cookie = "name=Rahul; max-age=2500";

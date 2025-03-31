@@ -78,8 +78,8 @@ let fc = [1, 2, 2, 3];
 let dc5 = "Hello";
 let [a, b, c] = dc5;
 // console.log(a, b, c);
-let dc6 = { fr: "apple", ab: "mango" };
-let { fr: name1, dc = "mango" } = dc6;
+let dc6 = { fr: "apple", ab: "mango", dc: "pppp" };
+let { fr: name1vv, dc = "fdfdfdfd" } = dc6;
 // console.log(dc);
 
 let fg1 = [];
@@ -124,4 +124,4 @@ async function getstate() {
 }
 let fg4 = [1, 2, 3, 4, 5];
 let [a1, , b1, ...fg5] = fg4;
-// console.log(a1, b1, fg5);
+console.log(a1, b1, fg5);

@@ -241,7 +241,7 @@ let rf = "dfsfsdfs";
 let dc1 = Array.from(rf);
 // console.log(dc1);
 //console.log(Array.from("Hello"));
-// console.log(Array.from({ length: 5 }, (it, i) => i * 2)); //create array of length 1,2,3,4,5
+//console.log(Array.from({ length: 5 }, (it, i) => i * 2)); //create array of length 1,2,3,4,5
 let dc2 = { name: "Harshit" };
 dc2 = 23;
 // if (!typeof dc === "string") {
