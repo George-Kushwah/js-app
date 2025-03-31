@@ -76,7 +76,7 @@ function testw1(a) {
   }
 }
 testw1(a9);
-console.log(a9);
+// console.log(a9);
 let a = {};
 let b = { key: "a" };
 let c = { key: "c" };
@@ -307,10 +307,10 @@ test.xz = 20;
 let s1 = 10;
 let s2 = new Number(10); // its create a object
 let s3 = 10;
-//console.log(b === c);
-//console.log(s1 === s2);
+// console.log(b === c);
+// console.log(s1 === s2);
 function setage(ed) {
-  if (ed == { age: 18 }) {
+  if (JSON.stringify(ed)) {
     console.log("hello age");
   } else if (ed == { age: 18 }) {
     console.log("not age");
@@ -479,7 +479,7 @@ w4.toString();
 // let dcf1 = { age: 45 };
 // dcf1.pl = "ppp";
 // console.log(dcf1);
-this.a = 10;
+//this.a = 10;
 const dcf2 = () => {
   setTimeout(() => {
     console.log(this.a);
@@ -503,9 +503,9 @@ let dcf4 = dcf3.reduce((prev, current, index) => {
 // console.log(dcf4);
 const dcf5 = [1, 2, 3, 4, 5, 6];
 let dcf6 = dcf5.reduce((prev, current, index) => {
-  // console.log(prev);
-  // console.log(current);
-  // console.log("itteration-1");
+  console.log(prev);
+  console.log(current);
+  console.log("itteration-1");
   return prev + current;
 });
 // console.log(dcf6);
