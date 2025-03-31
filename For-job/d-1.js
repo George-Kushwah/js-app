@@ -11,7 +11,7 @@ let a1 = {
 // a1.func();
 let a2 = "Rajesh";
 function test11() {
-  let a2 = "Minal";
+  //let a2 = "Minal";
   console.log(a2);
 }
 if (a2.length > 0) {
@@ -36,9 +36,9 @@ let a6 = JSON.parse(JSON.stringify(a5));
 a6.add.city = "Jaipur";
 //console.log(a6, a5);
 function* gen() {
-  let re = yield;
-  // let re = [yield, yield, yield];
-  //  console.log(re);
+  //let re = yield;
+  let re = [yield, yield, yield];
+  console.log(re);
   yield "Result";
   yield* ["React", "node", "express"];
 }
@@ -68,15 +68,15 @@ for (i in a8) {
   //console.log(a8[i]);
 }
 let a9 = { a: 10, b: 20, c: "name" };
-function test1(a) {
+function testw1(a) {
   for (key in a) {
     if (typeof a[key] === "number") {
       a[key] *= 2;
     }
   }
 }
-// test1(a9);
-// console.log(a9);
+testw1(a9);
+console.log(a9);
 let a = {};
 let b = { key: "a" };
 let c = { key: "c" };
