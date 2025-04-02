@@ -145,7 +145,7 @@ let a15 = a14.map((item, ind, arr) => {
         .toLowerCase() === a
   );
   if (a1.length > 1) {
-    //console.log(item);
+    // console.log(item);
   }
 });
 
@@ -179,8 +179,36 @@ function foo56(arr, ...val) {
     arr.splice(val.length + 1, 0, val[i]);
   }
 }
-//foo56(a17, 2, 3);
+foo56(a17, 2);
 // console.log(a17);
 let a18 = [...a17.splice(a17.length - dc), ...a17];
-console.log(a18);
+// console.log(a18);
 //console.log(a17.splice(4));
+let a19 = "aaaaaaaaabababcbdbfbbbcbbaba".split("");
+let a20 = {};
+let a21 = "";
+a19.forEach((i, ind) => {
+  let max = 0;
+  a20[i] = (a20[i] || 0) + 1;
+  for (let char in a20) {
+    if (a20[char] > max) {
+      max = a20[char];
+      a21 = char;
+    }
+  }
+});
+console.log(a21);
+const maxSpeed = {
+  car: 300,
+  bike: 60,
+  motorbike: 200,
+  airplane: 1000,
+  helicopter: 400,
+  rocket: 8 * 60 * 60,
+};
+
+const sortable = Object.entries(maxSpeed)
+  .sort(([, a], [, b]) => a - b)
+  .reduce((r, [k, v]) => ({ ...r, [k]: v }), {});
+
+//console.log(sortable);
