@@ -188,16 +188,16 @@ let a19 = "aaaaaaaaabababcbdbfbbbcbbaba".split("");
 let a20 = {};
 let a21 = "";
 a19.forEach((i, ind) => {
-  let max = 0;
   a20[i] = (a20[i] || 0) + 1;
-  for (let char in a20) {
-    if (a20[char] > max) {
-      max = a20[char];
-      a21 = char;
-    }
-  }
 });
-console.log(a21);
+for (let char in a20) {
+  let max = 0;
+  //console.log(a20[char]);
+  if (a20[char] >= 1) {
+    a21 += char;
+  }
+}
+console.log(a21, a20);
 const maxSpeed = {
   car: 300,
   bike: 60,
