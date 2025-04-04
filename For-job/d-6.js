@@ -191,8 +191,6 @@ a19.forEach((i, ind) => {
   a20[i] = (a20[i] || 0) + 1;
 });
 for (let char in a20) {
-  let max = 0;
-  //console.log(a20[char]);
   if (a20[char] >= 1) {
     a21 += char;
   }
@@ -212,3 +210,49 @@ const sortable = Object.entries(maxSpeed)
   .reduce((r, [k, v]) => ({ ...r, [k]: v }), {});
 
 //console.log(sortable);
+let arr = [
+  { name: "Iron Man", released_on: "2002-08-21T00:00:00.000Z" },
+  { name: "Captain Amoos", released_on: "2008-08-21T00:00:00.000Z" },
+  { name: "Amoos John Wick", released_on: "2014-08-21T00:00:00.000Z" },
+  { name: "James Bond", released_on: "2021-08-21T00:00:00.000Z" },
+  { name: "Loin King", released_on: "2022-08-21T00:00:00.000Z" },
+];
+let fromDate = "2004-01-01";
+let toDate = "2020-11-22";
+function foo5(data, key, start, end) {
+  start = new Date(start).getTime();
+  end = new Date(end).getTime();
+  return data.filter((item) => {
+    let time = new Date(item[key]).getTime();
+    return start < time && time < end;
+  });
+}
+//console.log(foo5(arr, "released_on", fromDate, toDate));
+
+let persons = [
+  { name: "Abc", dob: "1990-05-26" },
+  { name: "jhon", dob: "1980-05-26" },
+  { name: "admin", dob: "1999-05-26" },
+  { name: "deo", dob: "1995-05-26" },
+];
+let emp = [
+  { name: "lydia", doj: "2005-05-26" },
+  { name: "geek", doj: "2010-09-4" },
+  { name: "lucus", doj: "2015-11-2" },
+  { name: "deo", doj: "2020-10-1" },
+];
+
+let a23 = emp.filter((item) => persons.find((id) => item.name == id.name));
+console.log(a23);
+// const getAge = (birthDate) =>
+//   Math.floor((new Date() - new Date(birthDate).getTime()) / 3.15576e10);
+
+// // today is 2018-06-13
+// getAge("1994-06-14"); // 23
+// getAge("1994-06-13"); // 24
+
+// console.log(
+//   Math.floor(
+//     (new Date().getTime() - new Date("2005-10-1").getTime()) / 3.15576e10
+//   )
+// );
