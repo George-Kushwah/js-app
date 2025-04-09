@@ -195,7 +195,7 @@ for (let char in a20) {
     a21 += char;
   }
 }
-console.log(a21, a20);
+//console.log(a21, a20);
 const maxSpeed = {
   car: 300,
   bike: 60,
@@ -243,7 +243,7 @@ let emp = [
 ];
 
 let a23 = emp.filter((item) => persons.find((id) => item.name == id.name));
-console.log(a23);
+//console.log(a23);
 // const getAge = (birthDate) =>
 //   Math.floor((new Date() - new Date(birthDate).getTime()) / 3.15576e10);
 
@@ -256,3 +256,60 @@ console.log(a23);
 //     (new Date().getTime() - new Date("2005-10-1").getTime()) / 3.15576e10
 //   )
 // );
+//let ws1 = { name: "sfsf", age: 15 };
+//console.log(Object.values(ws1));
+var inputArray = [
+  "12345",
+  "34567",
+  "23456",
+  "23435",
+  "65342",
+  "65675",
+  "12374",
+  "78906",
+  "45782",
+  "34097",
+  "23089",
+  "39372",
+  "10926",
+];
+let aa1 = Object.entries(inputArray);
+let aa2 = aa1.map(([item, ind]) => ({ [item]: ind }));
+// console.log(aa2);
+// let a221 = ["sun", "mon", "tue"];
+// let a222 = Object.assign({}, a21);
+// //console.log(a222);
+// console.log(a221.reduce((a, v) => ({ ...a, [v]: v }), {}));
+//let aa3 = { city: "Jaipur", age: 12 };
+// console.log(Object.entries(aa3).flat(1));
+let aa4 = { city: "Jaipur", age: 25 };
+//console.log(Object.entries(aa4).flat(1));
+let aa5 = ["name", "Rahul", "city", "Agra"];
+//console.log(Object.assign({}, aa5));
+let aa6 = ["tan", "tea", "eat", "ate", "nat", "bat"];
+function test1(sx) {
+  let a = {};
+  for (let i of sx) {
+    const key = [...i].sort().join("");
+    a[key] = a[key] ? [...a[key], i] : [i];
+  }
+  //console.log(Object.values(a));
+  //console.log(a)
+}
+
+//test1(aa6);
+
+let aa7 = "hello my name olleh".split(" ");
+function test2(ed) {
+  for (i of ed) {
+    let sx = [...i].sort().join("").toUpperCase();
+    let as = ed.filter(
+      (item) => [...item].sort().join("").toUpperCase() === sx
+    );
+    if (as.length > 1) {
+      console.log(i);
+    }
+  }
+}
+
+test2(aa7);

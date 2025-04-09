@@ -22,7 +22,7 @@ let aq4 = {
     name: "lydia",
   },
 };
-//console.log(Object.entries(aq4).map(([item, val]) => ({ item, ...val })));
+// console.log(Object.entries(aq4).map(([item, val]) => ({ item, ...val })));
 let aq5 = [
   {
     key: "sample1",
