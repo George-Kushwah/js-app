@@ -318,7 +318,7 @@ function test2(ed) {
 let aa8 = { a: 2, b: 5, c: 9 };
 let aa9 = Object.values(aa8);
 //console.log(Math.max(...aa9));
-let aa10 = [3, 2, 6, 5, 3, 2, 0];
+let aa10 = [3, 2, 6, 5, 9, 3, 2, 0];
 let aa11 = [];
 aa10.forEach((item, ind, arr) => {
   if (arr[ind + 1] !== undefined && item > arr[ind + 1]) {
