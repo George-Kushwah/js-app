@@ -121,11 +121,11 @@ let a16 = (x = { ...a15 }) => {
 // a16(a15); //40
 // a16(); //80
 // a16(); //80
-//let df = { hj: "pppp" };
-let df = [1, 2, 2];
+let df = { hj: "pppp" };
+//let df = [1, 2, 2];
 // let df1 = { ...df };
 // let df1 = [...df];
-// console.log(df1);
+console.log(df1);
 // let a17 = {
 //   name: "user",
 //   logmess() {
@@ -503,9 +503,9 @@ let dcf4 = dcf3.reduce((prev, current, index) => {
 // console.log(dcf4);
 const dcf5 = [1, 2, 3, 4, 5, 6];
 let dcf6 = dcf5.reduce((prev, current, index) => {
-  console.log(prev);
-  console.log(current);
-  console.log("itteration-1");
+  // console.log(prev);
+  // console.log(current);
+  // console.log("itteration-1");
   return prev + current;
 });
 // console.log(dcf6);

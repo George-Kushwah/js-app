@@ -40,8 +40,8 @@ for (i = 0; i < s40.length; i++) {
 function test1() {
   let a = (b = 5); //here js attch b to global object
 }
-// test1();
-// console.log(b);
+test1();
+console.log(b);
 let dc1 = [1, 5, 4, 2, 6, 3].sort(); //it will sort on aphabet order
 let d12 = [];
 d12[10] = 10;
