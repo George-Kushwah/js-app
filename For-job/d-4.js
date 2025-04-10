@@ -37,10 +37,11 @@ for (i = 0; i < s40.length; i++) {
   //console.log(`${s40[i]}${s41[i]}`);
 }
 // console.log(ss1);
-function test1() {
-  let a = (b = 5); //here js attch b to global object
+function test1111() {
+  let a = (b = c = 5); //here js attch b to global object
 }
-test1();
+
+test1111();
 console.log(b);
 let dc1 = [1, 5, 4, 2, 6, 3].sort(); //it will sort on aphabet order
 let d12 = [];
