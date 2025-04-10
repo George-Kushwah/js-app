@@ -171,6 +171,17 @@ async function foo1() {
   }
 }
 //foo1();
+
+const testing = function () {
+  return new Promise((res, rej) => {
+    let a = fetch("https://jsonplaceholder.typicode.com/users");
+    return res(a);
+  });
+};
+testing()
+  .then((res) => res.json())
+  .then((ed) => console.log(ed));
+
 let aa5 = new Promise((res, rej) => {
   setTimeout(() => {
     res("1-*Resolve");

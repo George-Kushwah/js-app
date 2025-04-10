@@ -325,4 +325,19 @@ aa10.forEach((item, ind, arr) => {
     aa11.push(item);
   }
 });
-console.log(aa11);
+//onsole.log(aa11);
+
+function one() {
+  var a = 10;
+  function two() {
+    console.log(a);
+  }
+  two();
+}
+//one();
+var aa12 = 20;
+console.log(aa12);
+function aa12() {
+  console.log(30);
+}
+//aa12();
