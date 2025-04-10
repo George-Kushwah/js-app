@@ -184,7 +184,7 @@ foo56(a17, 2);
 let a18 = [...a17.splice(a17.length - dc), ...a17];
 // console.log(a18);
 a17.splice(3);
-console.log(a17);
+//console.log(a17);
 let a19 = "aaaaaaaaabababcbdbfbbbcbbaba".split("");
 let a20 = {};
 let a21 = "";
@@ -287,7 +287,7 @@ let aa4 = { city: "Jaipur", age: 25 };
 //console.log(Object.entries(aa4).flat(1));
 let aa5 = ["name", "Rahul", "city", "Agra"];
 //console.log(Object.assign({}, aa5));
-let aa6 = ["tan", "tea", "eat", "ate", "nat", "bat"];
+let aa6 = ["tan", "tea", "eat", "ate", "nat", "bat", "gbh"];
 function test1(sx) {
   let a = {};
   for (let i of sx) {
@@ -295,10 +295,10 @@ function test1(sx) {
     a[key] = a[key] ? [...a[key], i] : [i];
   }
   //console.log(Object.values(a));
-  //console.log(a)
+  console.log(a);
 }
 
-//test1(aa6);
+// test1(aa6);
 
 let aa7 = "hello my name olleh".split(" ");
 function test2(ed) {
@@ -308,9 +308,21 @@ function test2(ed) {
       (item) => [...item].sort().join("").toUpperCase() === sx
     );
     if (as.length > 1) {
-      console.log(i);
+      //  console.log(i);
     }
   }
 }
 
-test2(aa7);
+//test2(aa7);
+
+let aa8 = { a: 2, b: 5, c: 9 };
+let aa9 = Object.values(aa8);
+//console.log(Math.max(...aa9));
+let aa10 = [3, 2, 6, 5, 3, 2, 0];
+let aa11 = [];
+aa10.forEach((item, ind, arr) => {
+  if (arr[ind + 1] !== undefined && item > arr[ind + 1]) {
+    aa11.push(item);
+  }
+});
+console.log(aa11);
