@@ -198,4 +198,9 @@ for (var d = new Date(2025, 2, 25); d <= now; d.setDate(d.getDate() + 1)) {
 }
 // console.log(daysOfYear);
 let aq24 = new Array(6, 5);
-console.log(aq24);
+// console.log(aq24);
+function plol() {
+  let ae = (be = 6);
+}
+// plol();
+// console.log(be);

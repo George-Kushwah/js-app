@@ -41,8 +41,8 @@ function test1111() {
   let a = (b = c = 5); //here js attch b to global object
 }
 
-test1111();
-console.log(b);
+// test1111();
+// console.log(b);
 let dc1 = [1, 5, 4, 2, 6, 3].sort(); //it will sort on aphabet order
 let d12 = [];
 d12[10] = 10;
@@ -103,7 +103,7 @@ async function statecall() {
     console.log(e);
   }
 }
-statecall();
+// statecall();
 async function getstate() {
   try {
     // let fg2 = document.getElementById("state").value;
@@ -125,4 +125,4 @@ async function getstate() {
 }
 let fg4 = [1, 2, 3, 4, 5];
 let [a1, , b1, ...fg5] = fg4;
-console.log(a1, b1, fg5);
+// console.log(a1, b1, fg5);
