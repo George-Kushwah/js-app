@@ -27,8 +27,8 @@ let a2 = "ahulR";
 // console.log(a.split("").sort().join(""));
 let a3 = new Set([1, "Hello", 2]);
 
-a3.add("true");
-//console.log(a3.has(2));
+// a3.add("true");
+// console.log(a3.has(2));
 // console.log(a3);
 let a5 = { name: "Gunnu" };
 let a4 = new WeakSet();
@@ -179,12 +179,12 @@ function foo56(arr, ...val) {
     arr.splice(val.length + 1, 0, val[i]);
   }
 }
-foo56(a17, 2);
+// foo56(a17, 2);
 // console.log(a17);
 let a18 = [...a17.splice(a17.length - dc), ...a17];
-// console.log(a18);
-a17.splice(3);
-//console.log(a17);
+console.log(a18);
+// a17.splice(a17.length - dc);
+// console.log(a17);
 let a19 = "aaaaaaaaabababcbdbfbbbcbbaba".split("");
 let a20 = {};
 let a21 = "";
@@ -336,7 +336,7 @@ function one() {
 }
 //one();
 var aa12 = 20;
-console.log(aa12);
+// console.log(aa12);
 function aa12() {
   console.log(30);
 }
