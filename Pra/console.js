@@ -186,7 +186,7 @@ cd1.addEventListener("click", (e) => {
   let ac1 = ac.split(" ");
   if (ac1.length === 1) {
     e.target.classList.add("cl");
-    console.log("single click");
+    console.log(e.target.innerText);
   } else {
     console.log("Double click");
     e.target.classList.remove("cl");
