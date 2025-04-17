@@ -428,3 +428,28 @@ function ass2() {
 // ass1();
 // ass2();
 // console.log("object");
+
+// class clac {
+//   val = 0;
+//   add(num) {
+//     this.val += num;
+//     return this;
+//   }
+//   multi(num) {
+//     this.val *= num;
+//     return this;
+//   }
+// }
+const clac = {
+  val: 0,
+  add(num) {
+    this.val += num;
+    return this;
+  },
+  multi(num) {
+    this.val *= num;
+    return this;
+  },
+};
+//const clasi = new clac();
+console.log(clac.add(2).add(6).multi(3));
