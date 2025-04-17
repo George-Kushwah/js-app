@@ -182,7 +182,7 @@ function foo56(arr, ...val) {
 // foo56(a17, 2);
 // console.log(a17);
 let a18 = [...a17.splice(a17.length - dc), ...a17];
-console.log(a18);
+// console.log(a18);
 // a17.splice(a17.length - dc);
 // console.log(a17);
 let a19 = "aaaaaaaaabababcbdbfbbbcbbaba".split("");
@@ -341,3 +341,90 @@ function aa12() {
   console.log(30);
 }
 //aa12();
+let sd1 = document.getElementById("cv-3");
+
+function sd4() {
+  console.log("click btn");
+}
+
+function Debounce(fn, time) {
+  let tem = null;
+  return function () {
+    clearTimeout(tem);
+    tem = setTimeout(() => {
+      fn();
+    }, time);
+  };
+}
+const handle = Debounce(sd4, 300);
+sd1?.addEventListener("click", handle);
+
+let sd5 = { age: 22, gets: true, sets: "aa" };
+let sd6 = Object.create(sd5, {});
+// sd6.gets = false;
+// console.log(sd6.gets);
+// console.log(sd5.gets, sd6.gets);
+let sd7 = {
+  firstName: "John",
+  lastName: "Doe",
+  age: 35,
+  dc: { df: "pp" },
+};
+
+let sd8 = {
+  dc: { df: "pp" },
+  firstName: "John",
+  lastName: "Doe",
+  age: 35,
+};
+
+const isDeepEqual = (object1, object2) => {
+  const objKeys1 = Object.keys(object1);
+  const objKeys2 = Object.keys(object2);
+
+  if (objKeys1.length !== objKeys2.length) return false;
+
+  for (var key of objKeys1) {
+    const value1 = object1[key];
+    const value2 = object2[key];
+
+    const isObjects = isObject(value1) && isObject(value2);
+
+    if (
+      (isObjects && !isDeepEqual(value1, value2)) ||
+      (!isObjects && value1 !== value2)
+    ) {
+      return false;
+    }
+  }
+  return true;
+};
+
+const isObject = (object) => {
+  return object != null && typeof object === "object";
+};
+
+// console.log(isDeepEqual(sd7, sd8));
+
+function ass1() {
+  return new Promise((res) => {
+    console.log("Hello-1");
+    setTimeout(() => {
+      console.log("Hello-2");
+      return res("Hi");
+    }, 1000);
+  });
+}
+
+function ass2() {
+  return new Promise((res) => {
+    console.log("Hello-3");
+    setTimeout(() => {
+      console.log("Hello-4");
+      return res("Hi");
+    }, 500);
+  });
+}
+// ass1();
+// ass2();
+// console.log("object");
