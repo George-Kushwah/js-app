@@ -325,7 +325,7 @@ aa10.forEach((item, ind, arr) => {
     aa11.push(item);
   }
 });
-//onsole.log(aa11);
+//console.log(aa11);
 
 function one() {
   var a = 10;
@@ -452,4 +452,4 @@ const clac = {
   },
 };
 //const clasi = new clac();
-console.log(clac.add(2).add(6).multi(3));
+// console.log(clac.add(2).add(6).multi(3));
