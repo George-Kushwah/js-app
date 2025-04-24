@@ -125,7 +125,7 @@ let df = { hj: "pppp" };
 //let df = [1, 2, 2];
 // let df1 = { ...df };
 // let df1 = [...df];
-console.log(df1);
+// console.log(df1);
 // let a17 = {
 //   name: "user",
 //   logmess() {
@@ -160,7 +160,7 @@ let a20 = {
     arguments[0](); //target the present object
   },
 };
-// a20.method(call1, 1, 2);
+//a20.method(call1, 1, 2);
 let a21 = {
   total: 0,
   sum(a) {
