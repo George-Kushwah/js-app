@@ -35,7 +35,7 @@ let a7 = [1, 2, 3, 4, 5];
 Array.prototype.sum = function () {
   return this.reduce((a, b) => a + b);
 };
-//console.log(a7.sum());
+// console.log(a7.sum());
 let a8 = [2, 4, 6, 8, 10];
 function maptoploy(arr, sq) {
   let a = [];
