@@ -114,7 +114,7 @@ function createBase(base) {
 let adds = createBase(10);
 // console.log(adds(5));
 let aq15 = [1, 2, 3, 1, 2, 5, 3];
-//console.log(aq15.indexOf(3, 3));
+// console.log(aq15.indexOf(3, 3));
 let aq16 = [1, 2, 3, 4, 5];
 let aq16sum = 0;
 let aq16sq = aq16.map((num) => ((aq16sum += num), num * num));
