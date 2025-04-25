@@ -211,11 +211,11 @@ function abac(obj) {
 // abac(as1);
 // console.log(1 - false - 1);
 // console.log(false - 1);
-
-// let a20 = a19.reduce((total, sum, index) => {
-//   //   console.log("total", total);
-//   //   console.log("value", sum);
-//   //   console.log("iteation-1", index);
-//   df = total + sum;
-//   return df;
-// }, 3);
+const a19 = [1, 2, 3, 4, 5];
+let a20 = a19.reduce((total, sum, index) => {
+  // console.log("total", total);
+  // console.log("value", sum);
+  // console.log("iteation-1", index);
+  // df = total + sum;
+  // return df;
+}, 0);
