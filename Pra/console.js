@@ -111,6 +111,7 @@ a.splice(2);
 let a34 = 12;
 let s28 = "Rahul";
 // console.log(a34 ** 3);
+//console.log("object" * 5);
 // console.log(s28.substring(5, 1)); // its swap a value
 // console.log(s28.substr(0, 2));
 let s38 = ["one", "two"];
