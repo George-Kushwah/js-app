@@ -20,4 +20,29 @@ Array.prototype.sum = function () {
   return this.reduce((a, b) => a + b);
 };
 //console.log([1, 2, 3, 4, 5].sum());
-console.log(Array(10, 5));
+//console.log(Array(10, 5));
+let a3 = "a.b.c.d.e".split(".");
+let a4 = a3.reduceRight((a, b) => ({ [b]: a }));
+//console.log(a4);
+function magic() {
+  return (x = 1), [], {}; //js exe right side
+}
+//console.log(magic());
+function foo2() {
+  console.log(this);
+}
+let a5 = {
+  dc: foo2.bind(null), // foo2 function pointing to the window object
+};
+//a5.dc();
+
+let a6 = {
+  pizza: 346,
+  burger: 49,
+  alloticky: 99,
+  peties: 25,
+};
+function getprice(ab) {
+  return a6[ab] || 0;
+}
+console.log(getprice("alloticky"));
