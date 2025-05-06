@@ -45,4 +45,43 @@ let a6 = {
 function getprice(ab) {
   return a6[ab] || 0;
 }
-console.log(getprice("alloticky"));
+//console.log(getprice("peties"));
+
+class multifun {
+  val = 0;
+  add(num) {
+    this.val += num;
+    return this;
+  }
+  multi(num) {
+    this.val *= num;
+    return this;
+  }
+}
+
+const dc1 = new multifun();
+//console.log(dc1.add(2).add(3).multi(2));
+//console.log(typeof []);
+let a7;
+let a8;
+a7 = 1;
+a8 = (a7++, a7++, (a7) => a7 + 1)(a7);
+//console.log(a8);
+let a9 = ["Bat", "fan", "apple", "Cat", "cat"]; // js sort by UTF-8
+//console.log(a9.sort());
+
+function foo3() {
+  console.log("object-1");
+  return new Promise((res, rej) => {
+    setTimeout(() => {
+      console.log("object-2");
+    });
+    return res("Promise Resolve");
+  });
+}
+// console.log(foo3());
+// console.log("object-3");
+function foo4() {
+  return "Hello", "Peacock", {}, [];
+}
+//console.log(foo4());
