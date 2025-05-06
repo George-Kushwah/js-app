@@ -85,3 +85,10 @@ function foo4() {
   return "Hello", "Peacock", {}, [];
 }
 //console.log(foo4());
+function foo4(a, b) {
+  "use strict";
+  a = 6;
+  b = 4;
+  console.log(arguments[0] + arguments[1]);
+}
+// foo4(10, 20);
