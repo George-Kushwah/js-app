@@ -93,3 +93,29 @@ function foo4(a, b) {
   // console.log(arguments[0] + arguments[1]);
 }
 // foo4(10, 20);
+
+let a10 = [5, 5, 3, 3, 3, 2, 1, 1, 1, 1, 4, 4, 4, 4, 4];
+//Output [2,5,3,1,4]
+let a11 = {};
+a10.forEach((item) => {
+  a11[item] = (a11[item] || 0) + 1;
+});
+let a13 = [];
+let a12 = Object.entries(a11)
+  .sort(([, a], [, b]) => a - b)
+  .flat(1)
+  .filter((a) => {
+    if (typeof a == "string") {
+      //console.log(typeof parseInt(a));
+      a13.push(Number(a));
+    }
+  });
+
+//console.log(a13);
+// let a14 = [];
+// let a13 = ["2", 1, "3", 4].filter((a) => {
+//   if (typeof a == "string") {
+//     a14.push(Number(a));
+//   }
+// });
+// console.log(a14);
