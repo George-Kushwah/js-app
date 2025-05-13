@@ -119,3 +119,19 @@ let a12 = Object.entries(a11)
 //   }
 // });
 // console.log(a14);
+let a15 = "false";
+let a16 = !a15;
+//console.log(a16);
+let a17 = 0;
+// console.log(a17++);
+// console.log(++a17);
+// console.log(a17);
+let str = "Hello GFG"; //string is immutable
+str.replace("Hello", "Bye");
+//console.log(str);
+let str1 = "Hello GFG";
+let str2 = str1.toLowerCase();
+// console.log(str1);
+// console.log(str2);
+let a18 = ["aa", "bb", "cc"];
+//console.log(a18.find((a) => a == "aa"));
