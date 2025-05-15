@@ -135,3 +135,31 @@ let str2 = str1.toLowerCase();
 // console.log(str2);
 let a18 = ["aa", "bb", "cc"];
 //console.log(a18.find((a) => a == "aa"));
+let obj = {
+  a: "A",
+  b: "B",
+};
+
+function test(args) {
+  return (args.a = args.a + args.b);
+}
+
+let result = test(obj);
+
+// console.log("Obj = ", obj);
+// console.log("result =", result);
+a19 = ["m", "y", " ", " ", "d"];
+// const a20 = a19.filter((char) => char !== " ").join("");
+
+//console.log(a20);
+function foo5(arr) {
+  for (i = 0; i < arr.length; i++) {
+    if (arr[i] == " ") {
+      a19.splice(i, 1);
+      //a19[i] = arr[i];
+      //console.log(arr[i]);
+    }
+  }
+}
+foo5(a19);
+console.log(a19);
