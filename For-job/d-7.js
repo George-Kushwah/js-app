@@ -89,10 +89,10 @@ function foo4(a, b) {
   //"use strict";
   a = 6;
   b = 4;
-  console.log(a + b);
-  // console.log(arguments[0] + arguments[1]);
+  //console.log(a + b);
+  console.log(arguments[0] + arguments[1]);
 }
-// foo4(10, 20);
+//foo4(3, 20);
 
 let a10 = [5, 5, 3, 3, 3, 2, 1, 1, 1, 1, 4, 4, 4, 4, 4];
 //Output [2,5,3,1,4]
@@ -161,13 +161,13 @@ function foo5(arr) {
     }
   }
 }
-foo5(a19);
-console.log(a19);
-let aa19 = [1, 2, 3, 4];
+// foo5(a19);
+// console.log(a19);
+let aa19 = [1, 2, 3, 4, 5];
 let aa20 = aa19.reduce((total, sum, index) => {
-  //   console.log("total", total);
-  //   console.log("value", sum);
-  //   console.log("iteation-1", index);
+  console.log("total", total);
+  console.log("sum", sum);
+  console.log("iteation-", index);
   df = total + sum;
   return df;
 }, 3);
