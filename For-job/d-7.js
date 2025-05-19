@@ -163,3 +163,12 @@ function foo5(arr) {
 }
 foo5(a19);
 console.log(a19);
+let aa19 = [1, 2, 3, 4];
+let aa20 = aa19.reduce((total, sum, index) => {
+  //   console.log("total", total);
+  //   console.log("value", sum);
+  //   console.log("iteation-1", index);
+  df = total + sum;
+  return df;
+}, 3);
+// console.log(aa20);
