@@ -165,10 +165,20 @@ function foo5(arr) {
 // console.log(a19);
 let aa19 = [1, 2, 3, 4, 5];
 let aa20 = aa19.reduce((total, sum, index) => {
-  console.log("total", total);
-  console.log("sum", sum);
-  console.log("iteation-", index);
-  df = total + sum;
-  return df;
+  // console.log("total", total);
+  // console.log("sum", sum);
+  // console.log("iteation-", index);
+  // df = total + sum;
+  //return df;
 }, 3);
 // console.log(aa20);
+
+//let w1 = [1, 2, 3, 1, 2, 3, 4];
+let w1 = "AAABBCCDDAABB";
+let w2 = [];
+for (i = 0; i < w1.length; i++) {
+  if (w1[i] !== w1[i - 1]) {
+    w2.push(w1[i]);
+  }
+}
+console.log(w2);
