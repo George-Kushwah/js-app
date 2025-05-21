@@ -181,4 +181,32 @@ for (i = 0; i < w1.length; i++) {
     w2.push(w1[i]);
   }
 }
-console.log(w2);
+//console.log(w2);
+
+function foo() {
+  let x = (y = 0);
+  x++;
+  y++;
+  return x;
+}
+//console.log(foo(), typeof x, typeof y);
+
+async function fetchdata() {
+  try {
+    const [user, user1] = await Promise.all([
+      fetch("https://api.escuelajs.co/api/v1/users"),
+      fetch("https://jsonplaceholder.typicode.com/users"),
+    ]);
+    const [a1, b1] = await Promise.all([user.json(), user1.json()]);
+    const modify = b1.map((item) => {
+      return {
+        ...item,
+        clf: false,
+      };
+    });
+    console.log(modify);
+  } catch (e) {
+    console.log(e);
+  }
+}
+//fetchdata();
