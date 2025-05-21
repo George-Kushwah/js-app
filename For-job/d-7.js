@@ -210,3 +210,12 @@ async function fetchdata() {
   }
 }
 //fetchdata();
+
+let w3 = [1, 2, 3, 4];
+function foo6(...a) {
+  for (i of a) {
+    console.log(i * 2);
+  }
+}
+
+foo6(1, 2, 3, 4);
