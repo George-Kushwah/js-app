@@ -84,15 +84,15 @@ function foo3() {
 function foo4() {
   return "Hello", "Peacock", {}, [];
 }
-//console.log(foo4());
-function foo4(a, b) {
+// console.log(foo4());
+function foo55(a, b) {
   //"use strict";
   a = 6;
   b = 4;
   //console.log(a + b);
-  console.log(arguments[0] + arguments[1]);
+  //console.log(arguments[0] + arguments[1]);
 }
-//foo4(3, 20);
+foo55(3, 20);
 
 let a10 = [5, 5, 3, 3, 3, 2, 1, 1, 1, 1, 4, 4, 4, 4, 4];
 //Output [2,5,3,1,4]
@@ -218,4 +218,4 @@ function foo6(...a) {
   }
 }
 
-foo6(1, 2, 3, 4);
+// foo6(1, 2, 3, 4);
