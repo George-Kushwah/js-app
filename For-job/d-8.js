@@ -29,14 +29,14 @@ function printNumberPyramid(rows) {
     for (let j = 1; j <= i; j++) {
       line += j;
     }
-    for (let j = i - 1; j >= 1; j--) {
-      line += j;
+    for (let k = i - 1; k >= 1; k--) {
+      line += k;
     }
     console.log(line);
   }
 }
 
-//printNumberPyramid(4);
+printNumberPyramid(4);
 
 // Singleton
 
