@@ -36,7 +36,7 @@ function printNumberPyramid(rows) {
   }
 }
 
-printNumberPyramid(4);
+// printNumberPyramid(4);
 
 // Singleton
 
@@ -58,7 +58,7 @@ const in1 = singleton.getinstance();
 const in2 = singleton.getinstance();
 const in3 = singleton.getinstance();
 
-//console.log(in1, in2, in3);
+// console.log(in1, in2, in3);
 
 //Observer pattern
 
