@@ -92,11 +92,11 @@ const sub1 = new subscriber(1, "Raj");
 const sub2 = new subscriber(2, "Mohit");
 const sub3 = new subscriber(3, "Jhon");
 
-// const channel = new youtube();
-// channel.subcribe(sub1, sub2, sub3);
-// channel.publish("New Video Added");
-// channel.unsubcribe(sub2);
-// channel.publish("How the New Video Added");
+const channel = new youtube();
+channel.subcribe(sub1, sub2, sub3);
+channel.publish("New Video Added");
+channel.unsubcribe(sub2);
+channel.publish("Hows the New Video Added");
 
 //Factory pattern
 
