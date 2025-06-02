@@ -176,17 +176,18 @@ const person1 = new Person("Alice", 30);
 //Encapsulation
 
 class Counter {
-  count = 0; // private field
+  #count = 0; // private field
 
   increment() {
-    this.count++;
-    console.log(this.count);
+    this.#count++;
+    console.log(this.#count);
   }
 }
 
 const c = new Counter();
 //c.increment(); // 1
-
+c.count = 12;
+//c.increment();
 //Inheritance
 
 class Animal {
@@ -207,25 +208,24 @@ const d = new Dog();
 
 //Polymorphism
 
-class Shape {
-  area() {
+class shapes {
+  areas() {
     return 0;
   }
 }
 
-class Circle extends Shape {
-  constructor(radius) {
+class shp extends shapes {
+  constructor(ares) {
     super();
-    this.radius = radius;
+    this.area = ares;
   }
-
-  area() {
-    return Math.PI * this.radius * this.radius;
+  areas() {
+    return this.area * 2;
   }
 }
 
-const shape = new Circle(5);
-//console.log(shape.area());
+const getarea = new shp(15);
+//console.log(getarea.areas());
 
 //Abstraction
 
@@ -278,28 +278,8 @@ class ComputerFacade {
   }
 }
 
-// Decorator Pattern
-const myPC = new ComputerFacade();
-myPC.startComputer();
-
-function coffee() {
-  return "Coffee";
-}
-
-function withMilk(drink) {
-  return function () {
-    return drink() + " + Milk";
-  };
-}
-
-function withSugar(drink) {
-  return function () {
-    return drink() + " + Sugar";
-  };
-}
-
-const myCoffee = withSugar(withMilk(coffee));
-console.log(myCoffee());
+// const myCoffee = withSugar(withMilk(coffee));
+// console.log(myCoffee());
 
 // Proxy Pattern
 
@@ -334,5 +314,26 @@ class ProxyImage {
 
 // Usage
 const img = new ProxyImage("photo.jpg");
-img.display(); // Loads and displays
-img.display(); // Just displays (already loaded)
+// img.display();
+// img.display();
+
+class ani1 {
+  constructor(id, name) {
+    this.id = id;
+    this.name = name;
+  }
+}
+
+class ani2 extends ani1 {
+  city = "Agra";
+  constructor(id, name, city) {
+    super(id, name);
+    this.city = city;
+  }
+  getval() {
+    console.log(`Hi ${this.name} and city ${this.city}`);
+  }
+}
+
+const dats = new ani2(2, "Gunnu", "Jaipur");
+//dats.getval();
