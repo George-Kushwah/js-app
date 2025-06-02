@@ -93,10 +93,10 @@ const sub2 = new subscriber(2, "Mohit");
 const sub3 = new subscriber(3, "Jhon");
 
 const channel = new youtube();
-channel.subcribe(sub1, sub2, sub3);
-channel.publish("New Video Added");
-channel.unsubcribe(sub2);
-channel.publish("Hows the New Video Added");
+// channel.subcribe(sub1, sub2, sub3);
+// channel.publish("New Video Added");
+// channel.unsubcribe(sub2);
+// channel.publish("Hows the New Video Added");
 
 //Factory pattern
 
@@ -156,3 +156,183 @@ const car1 = new cars("Toyota", "Innova");
 const car2 = new cars("Maruti", "Alto");
 // car1.disp();
 // car2.disp();
+
+//Classes and Objects
+
+class Person {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+
+  greet() {
+    console.log(`Hello, my name is ${this.name}`);
+  }
+}
+
+const person1 = new Person("Alice", 30);
+//person1.greet();
+
+//Encapsulation
+
+class Counter {
+  count = 0; // private field
+
+  increment() {
+    this.count++;
+    console.log(this.count);
+  }
+}
+
+const c = new Counter();
+//c.increment(); // 1
+
+//Inheritance
+
+class Animal {
+  speak() {
+    console.log("Animal speaks");
+  }
+}
+
+class Dog extends Animal {
+  speak() {
+    super.speak(); // calls parent method
+    console.log("Dog barks");
+  }
+}
+
+const d = new Dog();
+//d.speak();
+
+//Polymorphism
+
+class Shape {
+  area() {
+    return 0;
+  }
+}
+
+class Circle extends Shape {
+  constructor(radius) {
+    super();
+    this.radius = radius;
+  }
+
+  area() {
+    return Math.PI * this.radius * this.radius;
+  }
+}
+
+const shape = new Circle(5);
+//console.log(shape.area());
+
+//Abstraction
+
+class Database {
+  connect() {
+    throw new Error("Method 'connect()' must be implemented.");
+  }
+}
+
+class MySQL extends Database {
+  connect() {
+    console.log("Connected to MySQL");
+  }
+}
+
+const db = new MySQL();
+//db.connect();
+
+//Facade Pattern
+
+class CPU {
+  start() {
+    console.log("CPU started");
+  }
+}
+
+class Memory {
+  load() {
+    console.log("Memory loaded");
+  }
+}
+
+class HardDrive {
+  read() {
+    console.log("Reading from hard drive");
+  }
+}
+
+class ComputerFacade {
+  constructor() {
+    this.cpu = new CPU();
+    this.memory = new Memory();
+    this.hardDrive = new HardDrive();
+  }
+
+  startComputer() {
+    this.cpu.start();
+    this.memory.load();
+    this.hardDrive.read();
+  }
+}
+
+// Decorator Pattern
+const myPC = new ComputerFacade();
+myPC.startComputer();
+
+function coffee() {
+  return "Coffee";
+}
+
+function withMilk(drink) {
+  return function () {
+    return drink() + " + Milk";
+  };
+}
+
+function withSugar(drink) {
+  return function () {
+    return drink() + " + Sugar";
+  };
+}
+
+const myCoffee = withSugar(withMilk(coffee));
+console.log(myCoffee());
+
+// Proxy Pattern
+
+class RealImage {
+  constructor(filename) {
+    this.filename = filename;
+    this.loadFromDisk();
+  }
+
+  loadFromDisk() {
+    console.log(`Loading ${this.filename}`);
+  }
+
+  display() {
+    console.log(`Displaying ${this.filename}`);
+  }
+}
+
+class ProxyImage {
+  constructor(filename) {
+    this.filename = filename;
+    this.realImage = null;
+  }
+
+  display() {
+    if (!this.realImage) {
+      this.realImage = new RealImage(this.filename);
+    }
+    this.realImage.display();
+  }
+}
+
+// Usage
+const img = new ProxyImage("photo.jpg");
+img.display(); // Loads and displays
+img.display(); // Just displays (already loaded)
