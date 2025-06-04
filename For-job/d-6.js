@@ -325,7 +325,7 @@ aa10.forEach((item, ind, arr) => {
     aa11.push(item);
   }
 });
-console.log(aa11);
+// console.log(aa11);
 
 function one() {
   var a = 10;
