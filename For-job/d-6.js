@@ -67,7 +67,7 @@ function foo5(arr, tar) {
   }
   return a;
 }
-console.log(foo5(aq17, 7));
+// console.log(foo5(aq17, 7));
 let dc1 = ["aa", "AA", "bc", "BB"];
 //console.log(dc.sort());
 // console.log(dc1.sort((a, b) => a.localeCompare(b)));
@@ -277,9 +277,9 @@ var inputArray = [
 let aa1 = Object.entries(inputArray);
 let aa2 = aa1.map(([item, ind]) => ({ [item]: ind }));
 // console.log(aa2);
-// let a221 = ["sun", "mon", "tue"];
-// let a222 = Object.assign({}, a21);
-// //console.log(a222);
+let a221 = ["sun", "mon", "tue"];
+let a222 = Object.assign({}, a21);
+//console.log(a222);
 // console.log(a221.reduce((a, v) => ({ ...a, [v]: v }), {}));
 //let aa3 = { city: "Jaipur", age: 12 };
 // console.log(Object.entries(aa3).flat(1));
@@ -321,11 +321,11 @@ let aa9 = Object.values(aa8);
 let aa10 = [3, 2, 6, 5, 9, 3, 2, 0];
 let aa11 = [];
 aa10.forEach((item, ind, arr) => {
-  if (arr[ind + 1] !== undefined && item > arr[ind + 1]) {
+  if (arr[ind] !== undefined && item > arr[ind + 1]) {
     aa11.push(item);
   }
 });
-//console.log(aa11);
+console.log(aa11);
 
 function one() {
   var a = 10;
