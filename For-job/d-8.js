@@ -278,6 +278,9 @@ class ComputerFacade {
   }
 }
 
+const fac = new ComputerFacade();
+//fac.startComputer();
+
 // const myCoffee = withSugar(withMilk(coffee));
 // console.log(myCoffee());
 
@@ -337,3 +340,40 @@ class ani2 extends ani1 {
 
 const dats = new ani2(2, "Gunnu", "Jaipur");
 //dats.getval();
+
+let obs = {
+  candidateCode: "ZGE444Z5HBNK",
+  password: "admin@1236544",
+  userName: "sfdfs",
+};
+let keys = "12345678901234567890123456789012";
+function encryptXOR(n) {
+  let l = "";
+
+  for (let c = 0; c < n.length; c++) {
+    console.log(c);
+    l += String.fromCharCode(
+      n.charCodeAt(c) ^ keys.charCodeAt(c % keys.length)
+    );
+  }
+
+  return l;
+  //return btoa(l);
+}
+//console.log(encryptXOR(obs));
+//console.log(encryptXOR(JSON.stringify(obs)));
+//console.log(JSON.stringify(obs));
+
+let a1 = [
+  { id: 1, name: "Laptop", category: "Electronics", price: 1200 },
+  { id: 2, name: "Mouse", category: "Electronics", price: 25 },
+];
+
+//let a2 = Object.assign({}, a1);
+let a2 = {};
+for (let i of a1) {
+  if (a2[i.category]) {
+    a2[i.category].push(i);
+  } else a2[i.category] = [i];
+}
+console.log(a2);

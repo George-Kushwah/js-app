@@ -50,8 +50,8 @@ a6.forEach((item, ind, arr) => {
 // console.log(
 //   a6.filter((item) => item.split("").sort().join("").toUpperCase() == "EHLLO")
 // );
-//let aq17 = [2, 5, 1, 4, 7, 9, 6];
-let aq17 = [5, 4, 3, 6, 1, 9];
+let aq17 = [2, 5, 1, 4, 7, 9, 6];
+//let aq17 = [5, 4, 3, 6, 1, 9];
 function foo5(arr, tar) {
   let a = [];
   let aa = arr.toSorted();
@@ -67,7 +67,7 @@ function foo5(arr, tar) {
   }
   return a;
 }
-// console.log(foo5(aq17, 9));
+console.log(foo5(aq17, 7));
 let dc1 = ["aa", "AA", "bc", "BB"];
 //console.log(dc.sort());
 // console.log(dc1.sort((a, b) => a.localeCompare(b)));
@@ -220,7 +220,7 @@ let arr = [
 ];
 let fromDate = "2004-01-01";
 let toDate = "2020-11-22";
-function foo5(data, key, start, end) {
+function foo5d(data, key, start, end) {
   start = new Date(start).getTime();
   end = new Date(end).getTime();
   return data.filter((item) => {
@@ -228,7 +228,7 @@ function foo5(data, key, start, end) {
     return start < time && time < end;
   });
 }
-//console.log(foo5(arr, "released_on", fromDate, toDate));
+//console.log(foo5d(arr, "released_on", fromDate, toDate));
 
 let persons = [
   { name: "Abc", dob: "1990-05-26" },
