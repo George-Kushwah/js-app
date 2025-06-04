@@ -376,4 +376,4 @@ for (let i of a1) {
     a2[i.category].push(i);
   } else a2[i.category] = [i];
 }
-console.log(a2);
+//console.log(a2);
