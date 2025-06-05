@@ -343,25 +343,37 @@ const dats = new ani2(2, "Gunnu", "Jaipur");
 
 let obs = {
   candidateCode: "ZGE444Z5HBNK",
-  password: "admin@1236544",
-  userName: "sfdfs",
+  password: "admin@123",
+  userName: "BSDPK3814L",
 };
 let keys = "12345678901234567890123456789012";
+let l = "";
 function encryptXOR(n) {
-  let l = "";
-
   for (let c = 0; c < n.length; c++) {
-    console.log(c);
     l += String.fromCharCode(
       n.charCodeAt(c) ^ keys.charCodeAt(c % keys.length)
     );
   }
 
-  return l;
+  return btoa(l);
   //return btoa(l);
+}
+
+function decp(fv) {
+  console.log(l);
+  //const l = window.atob(fv);
+  let c = "";
+  for (let m = 0; m < l.length; m++)
+    c += String.fromCharCode(
+      l.charCodeAt(m) ^ keys.charCodeAt(m % keys.length)
+    );
+  return c;
 }
 //console.log(encryptXOR(obs));
 //console.log(encryptXOR(JSON.stringify(obs)));
+document.getElementById("dfg").innerText = encryptXOR(JSON.stringify(obs));
+document.getElementById("dfg1").innerText = decp(l);
+
 //console.log(JSON.stringify(obs));
 
 let a1 = [

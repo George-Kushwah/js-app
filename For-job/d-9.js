@@ -7,4 +7,4 @@ for (i = 0; i < a2.length; i++) {
     a3.push(a2[i]);
   }
 }
-console.log(a3);
+//console.log(a3);
