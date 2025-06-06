@@ -7,13 +7,15 @@ function denn() {
   console.log("Fracth Data" + a3++);
 }
 function getDebounce(call, a) {
+  let tem = null;
   return function () {
-    setTimeout(() => {
+    clearInterval(tem);
+    tem = setTimeout(() => {
       call();
     }, a);
   };
 }
-//let debounce = getDebounce(denn, 500);
+let debounce = getDebounce(denn, 500);
 let a4 = { name: "Gunnu", age: 7 };
 let a5 = { age: 12, __proto__: a4 };
 // console.log(a5);
