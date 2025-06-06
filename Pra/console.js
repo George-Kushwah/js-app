@@ -72,6 +72,8 @@ let a29 = 100;
 // console.log(null != undefined); //false
 // console.log(undefined + undefined); //nan
 // console.log(undefined === undefined);
+// console.log(2 == "2");
+// console.log(typeof NaN);
 // console.log(null + null); //0
 // console.log(null + "abcd"); //nullabcd
 // console.log(["eval", "p"] + 10);
