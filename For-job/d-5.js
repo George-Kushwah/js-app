@@ -201,6 +201,7 @@ let aq24 = new Array(6, 5);
 // console.log(aq24);
 function plol() {
   let ae = (be = 6);
+  //return ae;
 }
 // plol();
 // console.log(be);
