@@ -219,3 +219,6 @@ function foo6(...a) {
 }
 
 // foo6(1, 2, 3, 4);
+
+let sd1 = [1, 2, 3, 4, 5];
+console.log(sd1[sd1.length - 1]);
