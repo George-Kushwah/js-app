@@ -11,5 +11,13 @@ for (i = 0; i < a2.length; i++) {
 let a4 = "foo";
 let a5 = "Hi is foo is all foo";
 let a6 = new RegExp(a4, "gi"); //i- case sensitive,gi: global
-let a7 = a6.replace(a5, a4);
+//let a7 = a6.replace(a5, a4);
 //console.log(a6.test(a7));
+let a8 = { name: "Rahul" };
+let a9 = { name: "Rahul" };
+if (JSON.stringify(a8) == JSON.stringify(a9)) {
+  console.log("Match");
+}
+// x = 5;
+// console.log(x);
+//let x;
