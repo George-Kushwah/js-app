@@ -8,3 +8,8 @@ for (i = 0; i < a2.length; i++) {
   }
 }
 //console.log(a3);
+let a4 = "foo";
+let a5 = "Hi is foo is all foo";
+let a6 = new RegExp(a4, "gi"); //i- case sensitive,gi: global
+let a7 = a6.replace(a5, a4);
+//console.log(a6.test(a7));
