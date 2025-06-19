@@ -21,3 +21,13 @@ if (JSON.stringify(a8) == JSON.stringify(a9)) {
 // x = 5;
 // console.log(x);
 //let x;
+
+let a10 = [1, 2, 3, 4, 5, 77, 22];
+
+for (let i = 0; i < Math.floor(a10.length / 2); i++) {
+  let temp = a10[i];
+  a10[i] = a10[a10.length - 1 - i];
+  a10[a10.length - 1 - i] = temp;
+}
+
+console.log(a10);
