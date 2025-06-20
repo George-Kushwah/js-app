@@ -38,4 +38,11 @@ for (i = 0; i < aa11.length; i++) {
     a12.push(aa11[i]);
   }
 }
-console.log(a12);
+//console.log(a12);
+
+function abc() {
+  wa = 10;
+  let wb = 5;
+}
+abc();
+console.log(wa, ab);
