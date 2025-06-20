@@ -30,4 +30,12 @@ for (let i = 0; i < Math.floor(a10.length / 2); i++) {
   a10[a10.length - 1 - i] = temp;
 }
 
-console.log(a10);
+//console.log(a10);
+let aa11 = [3, 2, 6, 5, 9, 3, 2, 0];
+let a12 = [];
+for (i = 0; i < aa11.length; i++) {
+  if (aa11[i] > aa11[i + 1]) {
+    a12.push(aa11[i]);
+  }
+}
+console.log(a12);
