@@ -82,4 +82,13 @@ let a22 = [
   ...a20.slice(0, a20.indexOf(a21)),
   ...a20.slice(a20.indexOf(a21) + 1, a20.length),
 ];
-console.log(a22);
+//console.log(a22);
+let a23 = [12, 10, 15];
+let a24 = Object.entries(a23).map(([item, ind]) => ({ [item]: ind }));
+//console.log(a24);
+let a25 = [1, 2, 3, 4, 5, 6];
+function foo3(val, its) {
+  let a = [...val.splice(its), ...val.slice(0, its)];
+  console.log(a);
+}
+//foo3(a25, 2);
