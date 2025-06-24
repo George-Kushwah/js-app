@@ -146,4 +146,25 @@ function foo3(as) {
     });
   });
 }
-foo3(rol);
+//foo3(rol);
+
+let maskss = ["name", "salary", "age", "gender"];
+function foo4(data, masks) {
+  let result = {};
+  let mask = data.map((item) => {
+    Object.keys(item).forEach((dat) => {
+      if (masks.includes(dat)) {
+        result[dat] =
+          String(item[dat]).slice(0, 1) +
+          "*****" +
+          item[dat].toString().slice(-1);
+      }
+    });
+    return {
+      ...item,
+      ...result,
+    };
+  });
+  return mask;
+}
+//console.log(foo4(employees, maskss));
