@@ -168,3 +168,27 @@ function foo4(data, masks) {
   return mask;
 }
 //console.log(foo4(employees, maskss));
+
+let q1 = [
+  { name: "gunnu", group: "ab" },
+  { name: "george", group: "abs" },
+];
+
+let q2 = [
+  { name: "sd", group: "1" },
+  { name: "xs", group: "2" },
+];
+
+function foo5(ar1, ar2) {
+  let a1 = [...ar1];
+  let a2 = [...ar2];
+  a1.forEach((item, ind) => {
+    if (item) {
+      const temp = a1[ind].name;
+      a1[ind].name = a2[ind].name;
+      a2[ind].name = temp;
+    }
+  });
+  console.log(a1, a2);
+}
+//foo5(q1, q2);
