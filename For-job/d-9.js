@@ -92,3 +92,58 @@ function foo3(val, its) {
   console.log(a);
 }
 //foo3(a25, 2);
+const employees = [
+  {
+    id: 20,
+    name: "Tim David-1",
+    age: 35,
+    gender: "male",
+    designation: "Technical Lead",
+    department: "IT",
+    salary: 55000,
+  },
+  {
+    id: 20,
+    name: "Tim David-2",
+    age: 35,
+    gender: "male",
+    designation: "Technical Lead",
+    department: "de",
+    salary: 55000,
+  },
+  {
+    id: 20,
+    name: "Tim Jhon-5",
+    age: 35,
+    gender: "male",
+    designation: "Technical Lead",
+    department: "IT",
+    salary: 55000,
+  },
+  {
+    id: 20,
+    name: "Tim deo-6",
+    age: 35,
+    gender: "male",
+    designation: "Technical Lead",
+    department: "admin",
+    salary: 55000,
+  },
+];
+
+const rol = {};
+for (i of employees) {
+  if (rol[i.department]) {
+    rol[i.department].push(i);
+  } else rol[i.department] = [i];
+}
+
+function foo3(as) {
+  Object.entries(as).map(([item, list]) => {
+    console.log(item);
+    list.map((item) => {
+      console.log(item.name);
+    });
+  });
+}
+foo3(rol);
