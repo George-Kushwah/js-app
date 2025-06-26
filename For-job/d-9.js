@@ -193,7 +193,11 @@ function foo5(ar1, ar2) {
 }
 //foo5(q1, q2);
 Promise.resolve().then(() => console.log("hello1"));
-queueMicrotask(() => console.log("hello2"));
+queueMicrotask(() =>
+  setTimeout(() => {
+    console.log("hello2");
+  })
+);
 function foo6() {
   return console.log("hello3");
 }
