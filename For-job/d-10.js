@@ -10,4 +10,4 @@ function foo1(arr) {
   }
 }
 foo1(a2);
-console.log(a2);
+//console.log(a2);
