@@ -75,7 +75,7 @@ foo1();
 //   console.log("Hello");
 // } else console.log("hi");
 let fc = [1, 2, 2, 3];
-// console.log(fc.sort(() => Math.random * 0.5));
+console.log([...fc].sort(() => Math.random() - 0.6));
 let dc5 = "Hello";
 let [a, b, c] = dc5;
 // console.log(a, b, c);
